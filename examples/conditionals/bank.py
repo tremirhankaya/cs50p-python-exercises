@@ -1,10 +1,10 @@
 
 def main():
-  print(greet(input("Greeting: ")))
+  print(f"${greet(input('Greeting: '))}")
 
 
 def greet(sentence):
-  sentence=sentence.lower()
+  sentence=sentence.strip().lower()
   if sentence.startswith("hello"):
      return 0
   elif sentence.startswith("h"):
